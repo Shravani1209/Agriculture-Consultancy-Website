@@ -1,0 +1,331 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Js</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap");
+
+      * {
+        font-family: inter tight;
+      }
+    </style>
+<div class=home3bg>
+<div class="home3"  id="searchdiv"><a href="homepage.html"><b>HOME</b></a></div></div>
+<div class="searchbar">
+ 
+    <div class="container my-8 flex flex-col items-left justify-center">
+      <input
+        type="text"
+        class="search w-3/4 h-12 bg-green-700 p-4 outline-none rounded-md mb-6"
+        placeholder="Search Anything..."
+        onchange="search()"
+        onkeydown="search()"
+        onkeyup="search()"
+        onkeypress="search()"
+      />
+      <div
+        class="options relative w- h-auto rounded-md overflow-hidden"
+      ></div>
+    </div>
+
+    <script>
+      // data for search
+      const options = [
+        {
+          name: "Ploughingh Related",
+          url: "#nangrni",
+        },
+        {
+          name: "Threshing",
+          url: "#malni",
+        },
+        {
+          name: "Flower Farming Related Informations",
+          url: "#flower",
+        },
+        {
+          name: "Malching Paper Informations",
+          url:"#malchingpap..." ,
+        },
+        {
+          name: "Irrigations",
+          url: "#sinchn",
+        },
+        {
+          name: "How To Do Cauliflower Farming",
+          url: "#gobhiflower",
+        },
+        {
+          name: "Fruit Farming Guide",
+          url: "#fruit",
+        },
+        {
+          name: "Banana AND Grape Farming Information",
+          url: "#bananaandgrape",
+        },
+        {
+          name: "Watermelon Harvesting And Farming Guide",
+          url: "#watermelon",
+        },
+        {
+          name: "Sugarcane Farming Informations AND Guide",
+          url: "#sugarcane",
+        },
+        
+      ];
+
+      const optionsEL = document.querySelector(".options");
+      options.forEach((i) => {
+        let option = document.createElement("a");
+        option.classList.add(
+          "option",
+          "h-12",
+          "bg-green-700",
+          "text-white",
+          "block",
+          "border-b",
+          "border-gray-600",
+          "flex",
+          "items-center",
+          "px-4"
+        );
+        option.innerHTML = i.name;
+        option.setAttribute("href", i.url);
+        optionsEL.appendChild(option);
+      });
+    </script>
+    <script>
+      // search function
+
+      const optionsEls = document.querySelectorAll(".option");
+      const searchEl = document.querySelector(".search");
+
+      const search = () =>
+        optionsEls.forEach(
+          (e) =>
+            (e.style.display =
+              e.innerHTML.toUpperCase().indexOf(searchEl.value.toUpperCase()) >
+              -1
+                ? ""
+                : "none")
+        );
+    </script>
+
+
+<script>
+$(document).ready(function(){
+$('.search_select_box select').selectpicker();
+})
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<div class="video">
+<div class="v1 v" id="nangrni"><h3 id="video1"><b>How to do ploughingh and when and why...</b></h3><iframe height="250px" width="600px" src="https://www.youtube.com/embed/9dR1OIhyvv0?si=wV5OANyIcwJ8606k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="v2 v"><h3 id="video2"><b>summer ploughingh advantages and why to do.</b></h3><iframe width="600px" height="250px" src="https://www.youtube.com/embed/yy7dJlfS3FM?si=NuyjoHX8D-YCGg9_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v"><h3 id="video3"><b>ploughingh for ginger,potato,and chilly "Bed Making".</b></h3><iframe width="600px" height="250px" src="https://www.youtube.com/embed/s9D_LYApt70?si=kDAjzSO_mQm_7QNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="video2">
+<div class="v1 v2" id="malni"><h5 id="video2"><b>Nangrni ploughing information</b></h5><iframe width="600px" height="250px" src="https://www.youtube.com/embed/PgUvpGeYG5U?si=m--V6bzgxVX8iRQl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v2 v2"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/QKCOMJWzP7s?si=HKeDrk7DWG3ceTel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v2"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/FT0bIZg0HGc?si=a9pSCGkKEmNXeC2K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="video3">
+<div class="v1 v3" id="flower"><h5 id="video3"><b>Nangrni ploughing information</b></h5>c<iframe width="600px" height="250px" src="https://www.youtube.com/embed/yLEeQz0Kk9g?si=ei9pb3j9UrZwPAay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v2 v3"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/Hhmi0Y4RD34?si=VRLEl3XbyMwILoLb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v3"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/05EnCI-ageI?si=nIeHguaiDxD7M8Kv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="video4">
+<div class="v1 v4" id="malchingpap..."><h5 id="video4"><b>Nangrni ploughing information</b></h5><iframe width="600px" height="250px" src="https://www.youtube.com/embed/fKECmiJ344A?si=9yOuIiPC6IypbxtF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v2 v4"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/NItMEPPZb2w?si=4l96NYJJENy7H0RK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v4"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/a4kJnMgpf94?si=ikZpR5mlgQssObXL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="video5">
+<div class="v1 v5" id="sinchn"><h1 id="video5"><b>Nangrni ploughing information</b></h1><iframe width="600px" height="250px" src="https://www.youtube.com/embed/4gU60kjszPs?si=XY2_IZN5VWpHh5_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v2 v5"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/PVcKZRxlHB4?si=1Wvn0N-hpg1fkCF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v5"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/klPZ-i4qk2w?si=j6q27AvteMqN5G55" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v4 v5"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/sJJ1cYgmQHg?si=dQjn_u6OF4DuwK5b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="video6">
+<div class="v1 v6" id="gobhiflower"><h5 id="video6"><b>Nangrni ploughing information</b></h5><iframe width="600px" height="250px" src="https://www.youtube.com/embed/lNNsu47afOU?si=2J3aSAAWcY1s-l3v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v2 v6"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/dEk-HJaN9Tc?si=dJQGSjbPGbl1HxLa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v6"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/upNINtTZ05Q?si=UI5I9erEjRT1y7GJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="video7">
+<div class="v1 v7" id="fruit"><h5 id="video7"><b>Nangrni ploughing information</b></h5><iframe width="600px" height="250px" src="https://www.youtube.com/embed/u5frQFwjWgo?si=-slPEGTUo7oD6Ebr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v2 v7"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/vAJaaVUIZoQ?si=Ju0gj-we_aK_CxMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v7"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/syDRoJ1PdYI?si=LNqKVdQTrp6XLcqC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="video8">
+<div class="v1 v8" id="bananaandgrape"><h5 id="video8"><b>Nangrni ploughing information</b></h5><iframe width="600px" height="250px" src="https://www.youtube.com/embed/jyOnH6blEOU?si=sQDgIFC2za2cea5l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v2 v8"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/VCqoGuH_7Bw?si=lEDoEqYaYozzvW6j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v8"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/DUrbWDeE1yc?si=rffZhW6jZJBkOlhN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="video9">
+<div class="v1 v9" id="watermelon"><h5 id="video9"><b>Nangrni ploughing information</b></h5><iframe width="600px" height="250px" src="https://www.youtube.com/embed/-2Zi3IS--z4?si=lvO3Dv7si_9xON3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v2 v9"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/czgpKb3JRL4?si=ppx1VnsdTgQf-7as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v9"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/KEJuRQCg6yw?si=deyD0o_GaV1Djkdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="video10">
+<div class="v1 v10" id="sugarcane"><h5 id="video10"><b>Nangrni ploughing information</b></h5><iframe width="600px" height="250px" src="https://www.youtube.com/embed/1FwYhAF7mf0?si=nPiW1EVpzoFNXdPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v2 v10"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/T8vb8NWOeQU?si=tmOTN0Z2Xp6oeg4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="v3 v10"><iframe width="600px" height="250px" src="https://www.youtube.com/embed/j0wxo_xKDx4?si=pAb6VrvTJDhvh0Lp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<style>
+.v{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.v2{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.v3{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.v4{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.v5{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.v6{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.v7{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.v8{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.v9{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.v10{
+border:2px solid black;
+height:300px;
+background-color:white;
+}
+.searchbar{
+background-color:white;
+} 
+.home1{
+background-color:green;
+border:2px green;
+border-radius:10px;
+}
+.video{
+height:900px;
+background-color:white;
+}
+.video2{
+height:900px;
+background-color:white;
+}
+
+.video3{
+height:900px;
+background-color:white;
+}
+
+.video4{
+height:900px;
+background-color:white;
+}
+
+.video5{
+height:900px;
+background-color:white;
+}
+
+.video6{
+height:900px;
+background-color:white;
+}
+
+.video7{
+height:900px;
+background-color:white;
+}
+
+.video8{
+height:900px;
+background-color:white;
+}
+
+.video9{
+height:900px;
+background-color:white;
+}
+.video10{
+height:900px;
+background-color:white;
+}
+
+#video1{
+text-align:right;
+font-size:30px;
+}
+#video2{
+text-align:right;
+}
+#video3{
+text-align:right;
+}
+#video4{
+text-align:right;
+}
+#video5{
+text-align:right;
+}
+#video6{
+text-align:right;
+}
+#video7{
+text-align:right;
+}
+#video8{
+text-align:right;
+}
+#video9{
+text-align:right;
+}
+#video10{
+text-align:right;
+}
+.home3{
+background-color:green;
+border:2px solid green;
+border-radius:10px;
+}
+#alignment{
+text-align:right;
+padding:10px;
+}
+
+
+
+
+
+</style>

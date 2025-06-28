@@ -1,0 +1,33 @@
+<div id="meetupform" class="meetupform">
+<div class="formsub1">
+<form action="insert3.php" method="POST">
+<label>Name:</label>
+<input type="text" placeholder="Name" id="name" name="name"><br><br><br><br>
+<label>E-Mail:</label>
+<input type="text" placeholder="E-Mail" id="e-mail" name="email"><br><br><br><br>
+<img src="http://localhost/agripro/photos/Meetup.png" height="200px" width="200px">
+<label>Address:</label>
+<input type="text" placeholder="Residensial Address" id="address" name="address"><br><br><br><br>
+<label>Gender:</label>
+<select name="gender"><option value="male">Male</option>
+<option value="female">Female</option>
+</select><br><br>
+<label>Appointment Date:</label><br><br><br><br>
+<input type="date" name="date">	<br><br><br><br>														
+<label>Appointment Time:</label><br><br><br><br>
+<input type="time" name="time"><br><br><br><br>		
+<input type="submit" value="submit" id="submit">
+</form>
+</div>
+</div><style>
+.meetupform{
+width:1000px;
+height:1000px;
+background-color:gray;
+}
+.formsub1{
+border:2px solid white;
+border-radius:10px;
+padding:10px; 
+}
+</style>
